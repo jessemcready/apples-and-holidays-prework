@@ -90,9 +90,9 @@ def all_supplies_in_holidays(holiday_hash)
     data.each do |holiday, supplies|
       holiday_array = holiday.to_s.split
       puts holiday_array
-      holiday_array.map do |holiday|
-        holiday.delete! "_"
-        holiday.capitalize!
+      holiday_array.map do |day|
+        day.delete! "_"
+        day.capitalize!
       end
       holiday_string = holiday_array.join
       puts "  #{holiday_string}: #{supplies.join(", ")}"  
