@@ -91,7 +91,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_array = holiday.to_s.split
       holiday_array.delete("_")
       holiday_array.map do |day|
-        day.delete! "_"
+        #day.delete! "_"
         day.capitalize!
       end
       holiday_string = holiday_array.join
